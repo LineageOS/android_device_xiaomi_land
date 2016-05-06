@@ -16,7 +16,7 @@
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.camera.ts.monotonic=0
+    media.camera.ts.monotonic=1
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
