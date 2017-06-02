@@ -50,7 +50,7 @@ LOCAL_CFLAGS += -Wall -Wextra -Werror
 LOCAL_SRC_FILES := $(MM_CAM_FILES)
 
 LOCAL_MODULE           := libmmcamera_interface
-LOCAL_SHARED_LIBRARIES := libdl libcutils liblog
+LOCAL_SHARED_LIBRARIES := libdl libcutils liblog libutils
 LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
