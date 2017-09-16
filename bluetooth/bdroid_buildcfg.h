@@ -18,7 +18,22 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Redmi 3S"
+#include <cutils/properties.h>
+#include <string.h>
+
+inline const char* BTGetDefaultName()
+{
+	char board_id[PROPERTY_VALUE_MAX];
+	property_get("ro.product.wt.boardid", board_id, "");
+
+	if (!strcmp("S88537AB1", board_id)) {
+		return "Redmi 3X";
+	}
+
+	return "Redmi 3S";
+}
+
+#define BTM_DEF_LOCAL_NAME BTGetDefaultName()
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
 #define MAX_ACL_CONNECTIONS    7
 #define MAX_L2CAP_CHANNELS    16
