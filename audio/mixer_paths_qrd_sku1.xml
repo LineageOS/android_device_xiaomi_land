@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    Copyright (c) 2015-16 The Linux Foundation. All rights reserved.
+    Copyright (c) 2015-2016 The Linux Foundation. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -58,13 +58,11 @@
     <ctl name="IIR1 INP2 Volume" value="84" />
     <ctl name="IIR1 INP3 Volume" value="84" />
     <ctl name="IIR1 INP4 Volume" value="84" />
-    <!-- +bug 196716,zhangjianming.wt,MODIFY,20160111,other can not reciving sound  -->
-    <ctl name="ADC1 Volume" value="4" />
-    <ctl name="ADC2 Volume" value="4" />
-    <ctl name="ADC3 Volume" value="4" />
-    <!-- +bug 196716,zhangjianming.wt,MODIFY,20160111,other can not reciving sound  -->
-    <ctl name="DEC1 Volume" value="84" />
-    <ctl name="DEC2 Volume" value="84" />
+    <ctl name="ADC1 Volume" value="6" />
+    <ctl name="ADC2 Volume" value="6" />
+    <ctl name="ADC3 Volume" value="6" />
+    <ctl name="DEC1 Volume" value="86" />
+    <ctl name="DEC2 Volume" value="86" />
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC1 MUX" value="ZERO" />
     <ctl name="ADC2 MUX" value="ZERO" />
@@ -82,15 +80,10 @@
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
-    <ctl name="Lineout_1 amp" value="DISABLE"/> 
-    <ctl name="headset amp" value="DISABLE"/>
-    <ctl name="SPK DAC Switch" value="0" />
     <ctl name="SPK" value="ZERO" />
     <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
-    <ctl name="MICBIAS CAPLESS Switch" value="0" />
-    <ctl name="EAR PA Boost" value="ENABLE" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
@@ -485,8 +478,6 @@
     </path>
 
     <path name="voice-call">
-	<ctl name="DEC1 Volume" value="84" />
-	<ctl name="DEC2 Volume" value="84" />
         <ctl name="PRI_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
@@ -844,18 +835,11 @@
 
     <!-- These are actual sound device specific mixer settings -->
     <path name="adc1">
-<!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC1 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC1" />
-<!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
     </path>
 
     <path name="adc2">
-<!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC2 Volume" value="6" />
-<!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
         <ctl name="DEC1 MUX" value="ADC2" />
-        <ctl name="MICBIAS CAPLESS Switch" value="1" />
     </path>
     <path name="adc3">
         <ctl name="ADC3 Volume" value="6" />
@@ -864,12 +848,9 @@
     </path>
 
     <path name="speaker">
-        <ctl name="MI2S_RX Channels" value="One" />
-        <ctl name="RX2 MIX1 INP1" value="RX2" />
-        <ctl name="RDAC2 MUX" value="RX2" />
-        <ctl name="HPHR" value="Switch" />
-        <ctl name="Lineout_1 amp" value="ENABLE"/>
-   </path>
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="SPK" value="Switch" />
+    </path>
 
     <path name="wsa-speaker">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
@@ -913,8 +894,6 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-	<ctl name="DEC1 Volume" value="86" />
-	<ctl name="DEC2 Volume" value="86" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
@@ -925,7 +904,6 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="headset-mic">
@@ -967,15 +945,8 @@
         <path name="wsa-speaker" />
     </path>
 
-    <!-- bug 212709,zhangjianming2.wt,modify,20160920,fixed is to voice voulme smaller-->
-    <path name="handfree-mic">
-	<path name="adc3" />
-	<ctl name="DEC1 MUX" value="ADC2" />
-	<ctl name="ADC2 MUX" value="INP3" />
-    </path>
-
     <path name="voice-speaker-mic">
-      <path name="handfree-mic" />
+        <path name="speaker-mic" />
     </path>
 
     <path name="voice-headphones">
@@ -987,8 +958,8 @@
     </path>
 
     <path name="speaker-and-headphones">
+        <path name="speaker" />
         <path name="headphones" />
-        <ctl name="Lineout_1 amp" value="DUALMODE"/>
     </path>
 
     <path name="usb-headphones">
@@ -1033,9 +1004,6 @@
     <!-- Dual MIC devices -->
     <path name="speaker-dmic-endfire">
         <path name="adc1" />
-<!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC3 Volume" value="6" />
-<!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="MI2S_TX Channels" value="Two" />
         <ctl name="ADC2 MUX" value="INP3" />
@@ -1066,8 +1034,6 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <ctl name="DEC1 Volume" value="84" />
-        <ctl name="DEC2 Volume" value="84" />
         <path name="speaker-dmic-endfire" />
     </path>
 
