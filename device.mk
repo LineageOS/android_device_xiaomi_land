@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-18 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +17,11 @@
 
 DEVICE_PATH := device/xiaomi/land
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
+# Inherit proprietary files
+$(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
 
 # Include device-specific product fragments
 include $(DEVICE_PATH)/product/*.mk
 
-# Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
+# Inherit from msm8937-common
+$(call inherit-product, device/xiaomi/msm8937-common/msm8937.mk)
