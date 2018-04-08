@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-#               2017 The LineageOS Project
+#               2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,8 +35,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := land
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/land/land:6.0.1/MMB29M/V9.5.5.0.MALMIFA:user/release-keys \
     PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V9.5.5.0.MALMIFA release-keys"
+
+BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V9.5.5.0.MALMIFA:user/release-keys
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
