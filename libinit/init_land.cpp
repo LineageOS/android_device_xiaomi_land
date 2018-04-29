@@ -1,6 +1,7 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
    Copyright (c) 2017, The LineageOS Project
+   Copyright (c) 2018, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -34,19 +35,23 @@
 #include <stdio.h>
 #include <string.h>
 
+#include <android-base/file.h>
+#include <android-base/properties.h>
+
 #include "init_msm8937.h"
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+
+using android::base::GetProperty;
+using android::init::property_set;
 
 void init_target_properties()
 {
     std::ifstream fin;
     std::string buf;
 
-    std::string product = property_get("ro.product.name");
+    std::string product = GetProperty("ro.product.name", "");
     if (product.find("land") == std::string::npos)
         return;
 
