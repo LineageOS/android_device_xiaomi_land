@@ -21,12 +21,6 @@ etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
-# Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
-vendor/lib/libbtnv.so
-vendor/lib64/libbtnv.so
-
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 etc/camera/ofilm_s5k5e8_chromatix.xml:vendor/etc/camera/ofilm_s5k5e8_chromatix.xml
