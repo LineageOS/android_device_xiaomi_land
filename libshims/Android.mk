@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+#               2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,10 +22,9 @@ LOCAL_SRC_FILES := \
     bionic/pthread_cond.cpp
 
 LOCAL_SHARED_LIBRARIES := libc
-
 LOCAL_MODULE := libshims_camera
 LOCAL_MODULE_TAGS := optional
-
 LOCAL_32_BIT_ONLY := true
+LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
