@@ -458,17 +458,17 @@ lib64/libfpservice.so
 lib64/libfpnav.so
 
 # Radio - MBN
-etc/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AA1/ct_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AA1/cu_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AA1/row_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AB1/cmcc_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AB1/ct_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AB1/cu_mcfg_sw.mbn
-etc/firmware/modem_config/S88537AB1/row_mcfg_sw.mbn
-etc/firmware/modem_config/S88537BA1/row_mcfg_sw.mbn
-etc/firmware/modem_config/S88537BA1/ytl_mcfg_sw.mbn
-etc/firmware/modem_config/S88537CA1/reliance_mcfg_sw.mbn
-etc/firmware/modem_config/S88537CA1/row_mcfg_sw.mbn
-etc/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn
-etc/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AA1/ct_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AA1/ct_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AA1/cu_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AA1/cu_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AA1/row_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AA1/row_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AB1/cmcc_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AB1/cmcc_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AB1/ct_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AB1/ct_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AB1/cu_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AB1/cu_mcfg_sw.mbn
+etc/firmware/modem_config/S88537AB1/row_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AB1/row_mcfg_sw.mbn
+etc/firmware/modem_config/S88537BA1/row_mcfg_sw.mbn:vendor/firmware/modem_config/S88537BA1/row_mcfg_sw.mbn
+etc/firmware/modem_config/S88537BA1/ytl_mcfg_sw.mbn:vendor/firmware/modem_config/S88537BA1/ytl_mcfg_sw.mbn
+etc/firmware/modem_config/S88537CA1/reliance_mcfg_sw.mbn:vendor/firmware/modem_config/S88537CA1/reliance_mcfg_sw.mbn
+etc/firmware/modem_config/S88537CA1/row_mcfg_sw.mbn:vendor/firmware/modem_config/S88537CA1/row_mcfg_sw.mbn
+etc/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn:vendor/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn
+etc/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn:vendor/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn
