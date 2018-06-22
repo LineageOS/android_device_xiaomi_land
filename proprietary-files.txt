@@ -28,19 +28,19 @@ vendor/lib/libbtnv.so
 vendor/lib64/libbtnv.so
 
 # Camera
-bin/mm-qcamera-daemon
-etc/camera/ofilm_s5k5e8_chromatix.xml
-etc/camera/ov13853_q13853a_chromatix.xml
-etc/camera/ov5670_f5670bq_chromatix.xml
-etc/camera/msm8937_camera.xml
-etc/camera/plus_ov5670_f5670bq_chromatix.xml
-etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml
-etc/camera/s5k5e8_chromatix.xml
-etc/camera/s5k3l8_f3l8yam_new_chromatix.xml
-etc/camera/sunny_ov5670_f5670bq_chromatix.xml
-etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml
-etc/camera/sunny_s5k3l8_f3l8yam_new_chromatix.xml
-etc/camera/s5k3l8_f3l8yam_chromatix.xml
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+etc/camera/ofilm_s5k5e8_chromatix.xml:vendor/etc/camera/ofilm_s5k5e8_chromatix.xml
+etc/camera/ov13853_q13853a_chromatix.xml:vendor/etc/camera/ov13853_q13853a_chromatix.xml
+etc/camera/ov5670_f5670bq_chromatix.xml:vendor/etc/camera/ov5670_f5670bq_chromatix.xml
+etc/camera/msm8937_camera.xml:vendor/etc/camera/msm8937_camera.xml
+etc/camera/plus_ov5670_f5670bq_chromatix.xml:vendor/etc/camera/plus_ov5670_f5670bq_chromatix.xml
+etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml
+etc/camera/s5k5e8_chromatix.xml:vendor/etc/camera/s5k5e8_chromatix.xml
+etc/camera/s5k3l8_f3l8yam_new_chromatix.xml:vendor/etc/camera/s5k3l8_f3l8yam_new_chromatix.xml
+etc/camera/sunny_ov5670_f5670bq_chromatix.xml:vendor/etc/camera/sunny_ov5670_f5670bq_chromatix.xml
+etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml
+etc/camera/sunny_s5k3l8_f3l8yam_new_chromatix.xml:vendor/etc/camera/sunny_s5k3l8_f3l8yam_new_chromatix.xml
+etc/camera/s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -109,7 +109,7 @@ vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so||58acb6f45c6a619dec57a57433fdd7a96aa19dff
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
@@ -393,15 +393,15 @@ vendor/lib/libchromatix_ov13853_q13853a_zsl_preview_bu64291gwz.so
 vendor/lib/libchromatix_ov13853_q13853a_zsl_video_bu64291gwz.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_isp_wb40.so
