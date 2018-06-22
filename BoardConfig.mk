@@ -20,8 +20,18 @@
 
 DEVICE_PATH := device/xiaomi/land
 
-# Inherit device-specific board fragments
-include $(DEVICE_PATH)/board/*.mk
+# Camera
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Kernel
+TARGET_KERNEL_CONFIG := lineageos_land_defconfig
+
+# Libinit
+TARGET_LIBINIT_MSM8937_DEFINES_FILE := $(DEVICE_PATH)/libinit/init_land.cpp
+
+# Libshim
+TARGET_LD_SHIM_LIBS := /vendor/bin/mm-qcamera-daemon|vendor/lib/libshims_camera.so
 
 # Inherit the proprietary files
 -include vendor/xiaomi/land/BoardConfigVendor.mk
