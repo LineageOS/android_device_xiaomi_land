@@ -439,17 +439,17 @@ etc/qdcm_calib_data_ili9881c_HD720p_video_Tianma.xml:vendor/etc/qdcm_calib_data_
 etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG.xml:vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG.xml
 
 # Fingerprint
-bin/gx_fpcmd
-bin/gx_fpd
-lib/hw/fingerprint.default.so:lib/hw/fingerprint.msm8937.so
-lib/libcom_fingerprints_service.so
-lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.msm8937.so
-lib64/hw/fingerprint.goodix.so
-lib64/hw/gxfingerprint.default.so
-lib64/libcom_fingerprints_service.so
-lib64/libfp_client.so
-lib64/libfpservice.so
-lib64/libfpnav.so
+bin/gx_fpcmd:vendor/bin/gx_fpcmd
+bin/gx_fpd:vendor/bin/gx_fpd
+lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.msm8937.so
+lib/libcom_fingerprints_service.so:vendor/lib/libcom_fingerprints_service.so
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so
+lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so
+lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so
+lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so
+lib64/libfp_client.so:vendor/lib64/libfp_client.so
+lib64/libfpservice.so:vendor/lib64/libfpservice.so
+lib64/libfpnav.so:vendor/lib64/libfpnav.so
 
 # Radio - MBN
 etc/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn:vendor/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn
