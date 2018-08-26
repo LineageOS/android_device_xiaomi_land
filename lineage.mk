@@ -42,6 +42,3 @@ BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V9.6.1.0.MALMIFD:user/release
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2017-04-01
