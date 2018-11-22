@@ -16,6 +16,7 @@
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.ts.rtmakeup=true \
     media.camera.ts.monotonic=1
 
 # Properties
